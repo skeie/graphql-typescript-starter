@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-airbnb",
+    "tslint-config-prettier"
+  ],
+
+  "rules": {
+    "interface-name": false,
+    "no-namespace": false,
+    "import-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "prefer-array-literal": [true, { "allow-type-parameters": true }],
+    "quotemark": [true, "single"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ]
+  }
+}

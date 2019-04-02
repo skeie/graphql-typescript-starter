@@ -1,0 +1,3 @@
+test/setup.ts
+src/**/*.spec.ts
+--recursive

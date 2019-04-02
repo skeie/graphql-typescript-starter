@@ -1,0 +1,1 @@
+ALTER TABLE workout_logs ADD column finished_at timestamptz not null default now()

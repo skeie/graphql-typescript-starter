@@ -1,0 +1,52 @@
+version: 2
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - test
+
+jobs:
+  test:
+    docker:
+      - image: circleci/node:10
+      - image: circleci/postgres:10
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: mind_pump_test
+    environment:
+      NODE_ENV: test
+      POSTGRES_USER: postgres
+      POSTGRES_DB: mind_pump_test
+    steps:
+      - run:
+          name: Install ltree extension for Postgres
+          command: |
+            sudo apt-get update
+            sudo apt-get install postgresql-client
+            dockerize -wait tcp://localhost:5432 -timeout 1m
+            psql -U postgres -h localhost -p 5432 -c 'create extension ltree'
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ checksum "package.json" }}
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-deps-{{ checksum "package.json" }}
+        # TODO: bring back when linting works
+      # - run:
+      #     name: Linting
+      #     command: yarn lint
+      - run:
+          name: Compile
+          command: yarn build-ts
+      - run:
+          name: Migrate
+          command: yarn migrate:up:test
+      - run:
+          name: Unit tests
+          command: yarn test:unit
+      - run:
+          name: Integration tests
+          command: yarn test:integration

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "lib": ["esnext.asynciterable", "es2015"]
+  },
+  "exclude": [
+    "./node_modules/*",
+    "dist",
+    "scripts",
+    "**/tests/**",
+    "**/generated/*.ts",
+    "**/config/**",
+    "./test/**"
+  ]
+}

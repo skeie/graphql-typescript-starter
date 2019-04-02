@@ -1,0 +1,23 @@
+{
+  "test": {
+    "driver": "pg",
+    "host": "localhost",
+    "port": 5432,
+    "database": "mind_pump_test",
+    "user": "postgres"
+  },
+  "dev": {
+    "driver": "pg",
+    "host": "localhost",
+    "port": 5432,
+    "database": "mind_pump",
+    "user": "postgres"
+  },
+  "production": {
+    "host": "ec2-54-225-237-84.compute-1.amazonaws.com",
+    "port": 5432,
+    "database": "d7euj5g210n0pa",
+    "user": "vxzahtqakpfmee",
+    "password": "aa2a7705605c1074abfd65f77f880f802657cf1f64c5cd8e16b9b5788c96760d"
+  }
+}
