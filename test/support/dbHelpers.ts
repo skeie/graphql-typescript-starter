@@ -1,10 +1,9 @@
 import bcrypt from 'bcrypt';
 import range from 'lodash/range';
-import { init } from '../../src/config/dbConnection';
+import { init, close } from '../../src/config/dbConnection';
 import { User } from '../../src/generated/graphql';
 
 export let db;
-let trackingData;
 
 export const initDb = async () => {
   db = await init();
@@ -16,6 +15,7 @@ export const cleanDb = async () => {
   await db.none('DELETE FROM workout_logs');
   await db.none('DELETE FROM user_phase');
   await db.none('DELETE FROM users');
+  await close();
 };
 
 export const createUser = async (email: string): Promise<User> => {
