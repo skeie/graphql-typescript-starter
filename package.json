@@ -13,7 +13,7 @@
     "test": "jest",
     "start": "nodemon",
     "build-ts": "tsc -p .",
-    "debug": "nodemon",
+    "dev": "nodemon",
     "migrate": "db-migrate --config config/database.json",
     "migrate:up": "db-migrate up --config config/database.json",
     "heroku-postbuild": "yarn build-ts && yarn migrate:up",
@@ -59,7 +59,6 @@
     "@api.video/nodejs-sdk": "^1.0.3",
     "@types/bcrypt": "^3.0.0",
     "@types/body-parser": "^1.17.0",
-    "@types/chai": "^4.1.7",
     "@types/express": "^4.16.0",
     "@types/graphql": "^14.0.5",
     "@types/invariant": "^2.2.29",
@@ -72,13 +71,9 @@
     "@types/node": "^10.11.7",
     "apollo-server-core": "^2.3.2",
     "apollo-server-testing": "^2.3.1",
-    "ava": "^0.25.0",
-    "chai": "^4.2.0",
-    "chai-change": "^2.1.2",
     "cheerio": "^1.0.0-rc.2",
     "csv-parser": "^2.1.0",
     "db-migrate-pg": "^0.4.0",
-    "dirty-chai": "^2.0.1",
     "download": "^7.1.0",
     "graphql-code-generator": "^0.15.2",
     "graphql-codegen-introspection": "^0.15.2",
@@ -91,12 +86,14 @@
     "node-fetch": "^2.3.0",
     "nodemon": "^1.18.4",
     "prettier": "^1.15.3",
-    "snap-shot-it": "^6.2.8",
     "ts-jest": "^24.0.1",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-plugin-prettier": "^2.0.0",
     "typescript": "3.2"
+  },
+  "jest": {
+    "globalSetup": "<rootDir>test/jestsetup.js"
   }
 }

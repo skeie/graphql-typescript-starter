@@ -6,17 +6,12 @@ import { IContext } from '../../../config/apolloFactory';
 
 async function signup(
   _,
-  {
-    email,
-    password,
-    gender,
-  }: { email: string; password: string; gender: string },
+  { email, password }: { email: string; password: string },
   context: IContext
 ) {
   try {
     let user = await context.dataSources.userStore.getUserByEmail(email);
 
-    // might wanna throw an error here saying that the user already exists?
     if (user) {
       throw new UserInputError(
         'Looks like you already have an account, try to sign in instead',
@@ -25,15 +20,12 @@ async function signup(
         }
       );
     } else {
-      const passwordHash = await hashString(password);
+      const generatePasswordHash = await hashString(password);
       user = await context.dataSources.userStore.createUser({
         email,
-        passwordHash,
-        gender,
+        passwordHash: generatePasswordHash,
       });
     }
-
-    await context.dataSources.userStore.updateGender(gender, `${user.id}`);
 
     const { passwordHash, ...userRest } = user;
 

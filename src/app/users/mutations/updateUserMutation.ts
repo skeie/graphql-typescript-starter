@@ -2,11 +2,7 @@ import { AuthenticationError } from 'apollo-server-errors';
 import logger from '../../../config/logger';
 import { IContext } from '../../../config/apolloFactory';
 
-async function updateUser(
-  _,
-  { gender }: { gender: string },
-  context: IContext
-) {
+async function updateUser(_, context: IContext) {
   try {
     const { user } = context;
     if (!user) {
@@ -15,9 +11,6 @@ async function updateUser(
       );
     }
 
-    if (gender) {
-      await context.dataSources.userStore.updateGender(gender, user.id);
-    }
     return context.dataSources.userStore.getUserById(user.id);
   } catch (error) {
     logger.info(`Update user error`, error);

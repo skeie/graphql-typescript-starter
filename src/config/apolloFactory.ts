@@ -12,7 +12,6 @@ import logger from './logger';
 export interface IContextUser {
   id: string;
   email: string;
-  gender?: string;
 }
 
 interface IPreConfigContext {
@@ -43,7 +42,7 @@ interface IApolloProps {
 
 export const createApollo = (schema, { db, createContext }: IApolloProps) => {
   const dataSources = () => ({
-    user: new UserStoreDataSource({ store: db }),
+    userStore: new UserStoreDataSource({ store: db }),
     ping: new PingDataSource(),
   });
 
