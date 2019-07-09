@@ -34,10 +34,10 @@ jobs:
           paths:
             - node_modules
           key: v1-deps-{{ checksum "package.json" }}
-        # TODO: bring back when linting works
-      # - run:
-      #     name: Linting
-      #     command: yarn lint
+
+       - run:
+           name: Linting
+           command: yarn lint
       - run:
           name: Compile
           command: yarn build-ts
@@ -45,8 +45,6 @@ jobs:
           name: Migrate
           command: yarn migrate:up:test
       - run:
-          name: Unit tests
-          command: yarn test:unit
-      - run:
-          name: Integration tests
-          command: yarn test:integration
+          name: tests
+          command: yarn test
+      
