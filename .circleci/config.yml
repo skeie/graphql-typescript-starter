@@ -34,10 +34,9 @@ jobs:
           paths:
             - node_modules
           key: v1-deps-{{ checksum "package.json" }}
-
-       - run:
-           name: Linting
-           command: yarn lint
+      - run:
+          name: Linting
+          command: yarn lint
       - run:
           name: Compile
           command: yarn build-ts
@@ -47,4 +46,3 @@ jobs:
       - run:
           name: tests
           command: yarn test
-      
