@@ -8,6 +8,7 @@ import UserStoreDataSource from '../app/users/UserStoreDataSource';
 import PingDataSource from '../app/ping/PingDataSource';
 import { authenticateUser } from './util';
 import logger from './logger';
+import { GraphQLFormattedError } from 'graphql';
 
 export interface IContextUser {
   id: string;
@@ -50,7 +51,7 @@ export const createApollo = (schema, { db, createContext }: IApolloProps) => {
     schema,
     dataSources,
     context: createContext || defaultCreateContext,
-    formatError: (error: Error) => {
+    formatError: (error: GraphQLFormattedError) => {
       // TODO: proper error
       /* tslint:disable */
       if (process.env.NODE_ENV === 'production') {
