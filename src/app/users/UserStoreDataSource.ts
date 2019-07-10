@@ -1,7 +1,6 @@
 import { DataSource } from 'apollo-datasource';
-import invariant from 'invariant';
 import { IDatabase } from 'pg-promise';
-import { IGqlUser, IDbUser } from './types';
+import { IDbUser } from './types';
 
 interface ICreateUserInput {
   email: string;
@@ -9,8 +8,8 @@ interface ICreateUserInput {
 }
 
 class UserStoreDataSource extends DataSource {
-  store: IDatabase<any>;
-  context: any;
+  private store: IDatabase<any>;
+  private context: any;
 
   constructor({ store }) {
     super();
