@@ -46,6 +46,7 @@ class Server {
   public start(cb = () => null) {
     const port = process.env.PORT || 3000;
 
+    // @ts-ignore
     this.server = this.app.listen(port, err => {
       if (err) {
         logger.error('Failed to start server', err);
