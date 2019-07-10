@@ -30,10 +30,10 @@
   },
   "dependencies": {
     "apn": "2.2.0",
-    "apollo-datasource": "0.2.1",
-    "apollo-datasource-rest": "0.2.1",
-    "apollo-server": "2.1.0",
-    "apollo-server-express": "2.2.7",
+    "apollo-datasource": "0.5.0",
+    "apollo-datasource-rest": "0.5.0",
+    "apollo-server": "2.6.8",
+    "apollo-server-express": "2.6.8",
     "bcrypt": "3.0.6",
     "body-parser": "1.18.3",
     "camelcase": "5.3.1",
@@ -50,7 +50,7 @@
     "ts-node": "8.0.2"
   },
   "resolutions": {
-    "apollo-server-core": "2.3.2"
+    "apollo-server-core": "2.6.8"
   },
   "devDependencies": {
     "@types/bcrypt": "3.0.0",
@@ -61,8 +61,8 @@
     "@types/jsonwebtoken": "8.3.0",
     "@types/morgan": "1.7.35",
     "@types/node": "10.14.12",
-    "apollo-server-core": "2.3.2",
-    "apollo-server-testing": "2.3.1",
+    "apollo-server-core": "2.6.8",
+    "apollo-server-testing": "2.6.8",
     "db-migrate-pg": "0.5.1",
     "graphql-code-generator": "0.18.2",
     "graphql-codegen-introspection": "0.18.2",
