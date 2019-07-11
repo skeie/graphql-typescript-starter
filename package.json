@@ -72,7 +72,7 @@
     "jest": "24.8.0",
     "node-fetch": "2.6.0",
     "nodemon": "1.18.4",
-    "prettier": "1.15.3",
+    "prettier": "1.18.2",
     "ts-jest": "24.0.1",
     "tslint": "5.11.0",
     "tslint-config-airbnb": "5.11.1",
