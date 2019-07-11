@@ -49,9 +49,6 @@
     "pg-promise": "8.7.3",
     "ts-node": "8.3.0"
   },
-  "resolutions": {
-    "apollo-server-core": "2.6.8"
-  },
   "devDependencies": {
     "@types/bcrypt": "3.0.0",
     "@types/body-parser": "1.17.0",
