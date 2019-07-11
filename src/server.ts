@@ -52,7 +52,7 @@ class Server {
         logger.error('Failed to start server', err);
         throw err;
       }
-      logger.info(`🔥 Mp-graphql running on port ${port}...`);
+      logger.info(`🔥 graphql server running on port ${port}...`);
       cb();
     });
   }

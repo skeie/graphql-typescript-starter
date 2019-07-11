@@ -5,7 +5,7 @@
    ```sh
    # Install dependencies
    $ yarn
-   $ createdb mind_pump && createdb mind_pump_test
+   $ createdb name_of_your_db && createdb name_of_your_db_test
    $ yarn run migrate:up
    $ yarn run migrate:up:test
    ```
@@ -24,11 +24,7 @@
 ## Testing
 
 ```sh
-yarn run test:unit
-yarn run test:integration
-
-# update snapshots
-SNAPSHOT_UPDATE=1 yarn run test:integration
+yarn test
 ```
 
 ## Database
@@ -44,23 +40,6 @@ Sometimes we change current migrations instead of adding new ones. In that case:
 ```sh
 yarn resetdb
 ```
-
-Prod dump/restore:
-
-```
-heroku pg:backups:capture
-heroku pg:backups:download
-psql mind_pump -f scripts/clearTables.sql
-pg_restore --verbose --clean --no-acl --no-owner -h localhost -d mind_pump latest.dump
-```
-
-After dump you might get issues creating rows. Do this:
-
-```
-ALTER SEQUENCE exercise_logs_id_seq RESTART WITH 20;
-```
-
-More info: https://devcenter.heroku.com/articles/heroku-postgres-import-export
 
 ## File structure
 
@@ -91,8 +70,3 @@ This is where we call external services
 ### /app/<name>Reducers
 
 This is where we serialize data from the StoreDataSources
-
-### Deployment
-
-This app is autodeployed on merge to master.
-See https://dashboard.heroku.com/apps/mp-graphql/deploy/heroku-git
