@@ -11,22 +11,13 @@ const USER_QUERY = gql`
 `;
 
 describe('userQueries', () => {
-  let query;
-
-  beforeAll(async () => {
-    await initDb();
-    const serverRes = await createServer();
-    query = serverRes.query;
-  });
-
-  afterAll(async () => {
-    await cleanDb();
-  });
-
   it('should query user', async () => {
+    await initDb();
+    const { query } = await createServer({ withUser: true });
     const { data } = await query({
       query: USER_QUERY,
     });
+    await cleanDb();
     expect(data).toMatchSnapshot();
   });
 });

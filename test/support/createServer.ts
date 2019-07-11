@@ -9,19 +9,17 @@ const createContext = (testUser: User) => () => ({
   user: testUser,
 });
 
-const createDefaultTestUser = async (): Promise<User> => {
-  try {
-    const usr = await createUser('mptestUser@mail.com');
-    return usr;
-  } catch (error) {
-    console.log('error 1337', error);
-  }
-};
+const createDefaultTestUser = async (): Promise<User> =>
+  createUser('mptestUser@mail.com');
 
 // @param overrideTestUser used to create a user that will be put on the
 // context
-const createServer = async () => {
-  const testUser = await createDefaultTestUser();
+const createServer = async ({ withUser }: { withUser: boolean }) => {
+  let testUser = null;
+  if (withUser) {
+    testUser = await createDefaultTestUser();
+  }
+
   const server = createApollo(schema, {
     db,
     createContext: createContext(testUser),

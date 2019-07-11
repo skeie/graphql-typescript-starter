@@ -7,20 +7,12 @@ const PING_QUERY = gql`
     ping
   }
 `;
-let query;
 describe('Ping', () => {
-  beforeAll(async () => {
-    await initDb();
-    const res = await createServer();
-    query = res.query;
-  });
-
-  afterAll(() => {
-    return cleanDb();
-  });
-
   it('Ping ping', async () => {
+    await initDb();
+    const { query } = await createServer({ withUser: false });
     const res = await query({ query: PING_QUERY });
+    await cleanDb();
     expect(res).toMatchSnapshot();
   });
 });
