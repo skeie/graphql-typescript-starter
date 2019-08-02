@@ -45,7 +45,7 @@
     "heroku-logger": "0.3.3",
     "jsonwebtoken": "8.5.1",
     "morgan": "1.9.1",
-    "pg-monitor": "1.1.0",
+    "pg-monitor": "1.2.0",
     "pg-promise": "8.7.4",
     "ts-node": "8.3.0"
   },
