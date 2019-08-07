@@ -1053,10 +1053,10 @@ asn1@~0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.3.tgz#dac8787713c9966849fc8180777ebe9c1ddf3b86"
 
-assert-options@0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/assert-options/-/assert-options-0.1.3.tgz#ea56c6a67a558eefb9db52c394f2fa92b94bfcde"
-  integrity sha512-DXrZ5WkCv/igD+H8OmeUTl9k0pBhYSTdyA7DRZoSJERCzQ8Z2v85yDjkhYVnHUOeCXGfCNKaogRbLWQsIQbtpg==
+assert-options@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/assert-options/-/assert-options-0.4.0.tgz#53692d218c921a71ece9ac9a84f8bb6ff1e39bfe"
+  integrity sha512-HukncCp5jpMpKE4vcxH/YrmoJUDTtjpITOdw2OR1yDjhbecUf6EJn/xRPN73ykuvDGRLmAD7OL92zhvMO3nnTA==
 
 assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
@@ -5063,14 +5063,14 @@ pg-pool@^2.0.4:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.5.tgz#f00556fab23f1bbb14b0650ba8d0e447434a1b04"
 
-pg-promise@8.7.5:
-  version "8.7.5"
-  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-8.7.5.tgz#d66beb86b041ae6e9dc66c4b5c7fb04dafcd18bb"
-  integrity sha512-r/OmS1b1i0nA0KHqlbcAoMLoNo3EGUdcZxaseyXnHrzepcS8ciK516Lw6/lIb6AeWI85ZOBSNdiPlw22xoFx3A==
+pg-promise@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-9.0.0.tgz#3a7002ce747099116a93ca4f04421ef41ebb887a"
+  integrity sha512-l8ZKzbxqBHSg+Z1Q1AXv+nPfK0OEpBiqOqIQyQdrfUPyjT2fHwkB+kQCzZ+4Phjh5Z2sAa8la4sRHvEke/P//g==
   dependencies:
-    assert-options "0.1.3"
+    assert-options "0.4.0"
     manakin "0.5.2"
-    pg "7.11.0"
+    pg "7.12.0"
     pg-minify "1.4.1"
     spex "2.2.0"
 
@@ -5085,7 +5085,20 @@ pg-types@~2.0.0:
     postgres-date "~1.0.4"
     postgres-interval "^1.1.0"
 
-pg@7.11.0, pg@^7.8.0:
+pg@7.12.0:
+  version "7.12.0"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-7.12.0.tgz#e1b883afe14acb0db58385c20bb7236c7e0aef56"
+  integrity sha512-q54Ic0oBXfDZMwheP8ALeUX32TUXvF7SNgAlZjyhkDuFCJkQCgcLBz0Be5uOrAj3ljSok/CI9lRbYzEko0z1Zw==
+  dependencies:
+    buffer-writer "2.0.0"
+    packet-reader "1.0.0"
+    pg-connection-string "0.1.3"
+    pg-pool "^2.0.4"
+    pg-types "~2.0.0"
+    pgpass "1.x"
+    semver "4.3.2"
+
+pg@^7.8.0:
   version "7.11.0"
   resolved "https://registry.yarnpkg.com/pg/-/pg-7.11.0.tgz#a8b9ae9cf19199b7952b72957573d0a9c5e67c0c"
   integrity sha512-YO4V7vCmEMGoF390LJaFaohWNKaA2ayoQOEZmiHVcAUF+YsRThpf/TaKCgSvsSE7cDm37Q/Cy3Gz41xiX/XjTw==

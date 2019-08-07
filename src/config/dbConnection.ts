@@ -8,7 +8,7 @@ import diagnostics from './dbDiagnostics';
 // TODO: move to .env file
 import dbConfig from './dbConfig';
 
-import { IMain, IDatabase, IOptions } from 'pg-promise';
+import { IMain, IDatabase } from 'pg-promise';
 
 // Database connection parameters:
 const config = dbConfig;
