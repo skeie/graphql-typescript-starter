@@ -5056,10 +5056,10 @@ pg-minify@1.5.0:
   resolved "https://registry.yarnpkg.com/pg-minify/-/pg-minify-1.5.0.tgz#da32cec8578fbeefac179307b324e68300bd1f8e"
   integrity sha512-qcH0oUJl6ayAlX8rIO6dGFIbtbMKw0NoMDfXCOpRFUryPJZKh7yj8hsWfGfBgeHW1zkpe8etLo3AdeU7nBPqmw==
 
-pg-monitor@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/pg-monitor/-/pg-monitor-1.2.1.tgz#c54882f90568cbdf36abf46be7b5e91b1c51720e"
-  integrity sha512-ESZFoOrbI5DGhOd02QSKSPBeLqXlozxTttxsbMn+sNFuVABRLiDZz72nH74P75dc3atzS3tUIwCZLhMMGiYARg==
+pg-monitor@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/pg-monitor/-/pg-monitor-1.2.2.tgz#c785ca15e94b0d43feb023c5b508d70a1d0e4024"
+  integrity sha512-CZdBt32t2SOuzhj0aYG8MfOBeT0u/a/UDpnBhr//9XWUQ1k7XWlzOCZda90VTNYWawjOYFduhWVFJ+bWTHlH+g==
   dependencies:
     cli-color "1.4.0"
 
