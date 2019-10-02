@@ -5056,10 +5056,10 @@ pg-int8@1.0.1:
   resolved "https://registry.yarnpkg.com/pg-int8/-/pg-int8-1.0.1.tgz#943bd463bf5b71b4170115f80f8efc9a0c0eb78c"
   integrity sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==
 
-pg-minify@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/pg-minify/-/pg-minify-1.5.0.tgz#da32cec8578fbeefac179307b324e68300bd1f8e"
-  integrity sha512-qcH0oUJl6ayAlX8rIO6dGFIbtbMKw0NoMDfXCOpRFUryPJZKh7yj8hsWfGfBgeHW1zkpe8etLo3AdeU7nBPqmw==
+pg-minify@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/pg-minify/-/pg-minify-1.5.1.tgz#5d0a9c7c31e482398a68669af564f0d7d31b1789"
+  integrity sha512-nqUTo8y9T0VhiJoWC0sK0+2S8hYDiu7CdH0Z9ijPi2iikiQ44mfcAFxEJxfvF8H3h/bDBvXthtOQPIB3pLWIow==
 
 pg-monitor@1.2.2:
   version "1.2.2"
@@ -5072,15 +5072,15 @@ pg-pool@^2.0.4:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.5.tgz#f00556fab23f1bbb14b0650ba8d0e447434a1b04"
 
-pg-promise@9.1.2:
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-9.1.2.tgz#57eccd540260a7b1def36df59a752b20140e011e"
-  integrity sha512-7b34YoxDechuN5rUKjxGzJ+OEW7GIAkbeJK/X1zZdkTDrnI37Is5+MnumnIziJWkgu65pnH3guu3oAAkR9e1ng==
+pg-promise@9.2.1:
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-9.2.1.tgz#7277ed448dccf957f79a0bc5b544f2a626032279"
+  integrity sha512-7+Kijbqz2m6dcDi/EQFlJs2aL0torezB2WMtM9mTLJZKs8yltYYsZn0ialu5kGmGtH4ap977rkSxadq/DDUkZg==
   dependencies:
     assert-options "0.6.0"
     manakin "0.5.2"
     pg "7.12.1"
-    pg-minify "1.5.0"
+    pg-minify "1.5.1"
     spex "3.0.0"
 
 pg-types@^2.1.0:
