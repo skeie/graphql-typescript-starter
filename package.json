@@ -57,7 +57,7 @@
     "@types/jest": "24.0.18",
     "@types/jsonwebtoken": "8.3.4",
     "@types/morgan": "1.7.37",
-    "@types/node": "10.14.17",
+    "@types/node": "10.14.19",
     "apollo-server-core": "2.9.4",
     "apollo-server-testing": "2.9.4",
     "db-migrate-pg": "1.0.0",
