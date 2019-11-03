@@ -1,14 +1,14 @@
 // Loading and initializing pg-promise:
 /* tslint:disable */
 // copied from pg-promise example
-import pgPromise from 'pg-promise';
+import camelCase from 'lodash/camelCase';
 import monitor from 'pg-monitor';
-
-import diagnostics from './dbDiagnostics';
+import pgPromise, { IDatabase, IMain } from 'pg-promise';
 // TODO: move to .env file
 import dbConfig from './dbConfig';
+import diagnostics from './dbDiagnostics';
 
-import { IMain, IDatabase } from 'pg-promise';
+
 
 // Database connection parameters:
 const config = dbConfig;
@@ -19,6 +19,19 @@ export const init = async (): Promise<IDatabase<any>> => {
   pgp = pgPromise({
     query: e => {
       monitor.query(e); // monitor the event;
+    },
+    receive: function(data: [{ [s: string]: string }]) {
+      var template = data[0];
+      for (var prop in template) {
+        var camel = camelCase(prop);
+        if (!(camel in template)) {
+          for (var i = 0; i < data.length; i++) {
+            var d = data[i];
+            d[camel] = d[prop];
+            delete d[prop];
+          }
+        }
+      }
     },
   });
 
