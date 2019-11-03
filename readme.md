@@ -41,6 +41,10 @@ Sometimes we change current migrations instead of adding new ones. In that case:
 yarn resetdb
 ```
 
+### Install guide for generating TS types based on db schema
+
+https://github.com/rmp135/sql-ts
+
 ## File structure
 
 Flow:

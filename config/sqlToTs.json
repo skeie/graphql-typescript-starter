@@ -1,0 +1,14 @@
+{
+  "dialect": "pg",
+  "columnNameCasing": "camel",
+  "interfaceNameFormat": "DB${table}",
+  "tableNameCasing": "pascal",
+  "filename": "./types/DatabaseModels",
+  "excludedTables": ["public.migrations"],
+  "connection": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "name_of_your_db",
+    "user": "postgres"
+  }
+}

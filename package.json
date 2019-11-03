@@ -16,7 +16,6 @@
     "dev": "nodemon",
     "migrate": "db-migrate --config config/database.json",
     "migrate:up": "db-migrate up --config config/database.json",
-    "heroku-postbuild": "yarn build-ts && yarn migrate:up",
     "migrate:up:prod": "db-migrate up --config config/database.json",
     "migrate:down": "db-migrate down --config config/database.json",
     "migrate:down:test": "NODE_ENV=test db-migrate down --config config/database.json --env test",
@@ -25,8 +24,9 @@
     "migrate:prod": "db-migrate --config config/database.json --env production",
     "lint": "node_modules/.bin/tslint ./src/**/*.ts",
     "lint:fix": "node_modules/.bin/tslint ./src/**/*.ts --fix",
-    "resetdb": "dropdb mind_pump && createdb mind_pump && yarn migrate:up && dropdb mind_pump_test && createdb mind_pump_test && yarn migrate:up:test",
-    "graphql:typegen": "gql-gen --config codegen.yml"
+    "resetdb": "dropdb name_of_your_db && createdb name_of_your_db && yarn migrate:up && dropdb name_of_your_db_test && createdb name_of_your_db_test && yarn migrate:up:test",
+    "graphql:typegen": "gql-gen --config codegen.yml",
+    "db:types": "npx @rmp135/sql-ts -c ./config/sqlToTs.json"
   },
   "dependencies": {
     "apn": "2.2.0",
@@ -52,6 +52,7 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
+    "@rmp135/sql-ts": "^1.3.0",
     "@types/bcrypt": "3.0.0",
     "@types/body-parser": "1.17.1",
     "@types/express": "4.17.1",
