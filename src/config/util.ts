@@ -1,11 +1,10 @@
 // TODO: Change this
-const APP_SECRET = 'MP-is-aw3some';
+const APP_SECRET = 'this-is-aw3some';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
 import { IContextUser } from './apolloFactory';
 
-// const salt = '349a0f89-1b72-44b4-ad25-099d6abf6ce5';
 const saltRounds = 10;
 
 export const authenticateUser = (
