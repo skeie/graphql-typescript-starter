@@ -8,12 +8,10 @@ import pgPromise, { IDatabase, IMain } from 'pg-promise';
 import dbConfig from './dbConfig';
 import diagnostics from './dbDiagnostics';
 
-
-
 // Database connection parameters:
 const config = dbConfig;
 
-let db: IDatabase<any>, pgp: IMain;
+let pgp: IMain;
 
 export const init = async (): Promise<IDatabase<any>> => {
   pgp = pgPromise({
