@@ -1,5 +1,4 @@
-import { createToken } from './utils';
-import { hashString } from '../../../config/util';
+import { hashString, createToken } from '../../../config/util';
 import { UserInputError } from 'apollo-server-errors';
 import logger from '../../../config/logger';
 import { IContext } from '../../../config/apolloFactory';
@@ -31,7 +30,7 @@ async function signup(
 
     return {
       ...userRest,
-      token: createToken(email, passwordHash, `${user.id}`),
+      token: createToken(email, `${user.id}`),
     };
   } catch (error) {
     logger.info(`error while trying to login user ${email}`, error);

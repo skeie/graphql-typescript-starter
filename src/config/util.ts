@@ -7,6 +7,10 @@ import { IContextUser } from './apolloFactory';
 
 const saltRounds = 10;
 
+export const createToken = (email: string, userId: string) => {
+  return jwt.sign({ email, id: userId }, APP_SECRET);
+};
+
 export const authenticateUser = (
   authorization?: string
 ): IContextUser | null => {
