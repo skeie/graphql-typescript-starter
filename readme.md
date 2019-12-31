@@ -48,6 +48,10 @@ yarn resetdb
 
 ### Install guide for generating TS types based on db schema
 
+```sh
+db:types
+```
+
 https://github.com/rmp135/sql-ts
 
 ## File structure
