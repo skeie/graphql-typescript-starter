@@ -2,10 +2,21 @@ import bcrypt from 'bcrypt';
 import { init, close } from '../../src/config/dbConnection';
 import { User } from '../../src/generated/graphql';
 import { IDatabase } from 'pg-promise';
+import expressServer from '../../src/server';
 
 export let db;
 
 export type DatabaseType = IDatabase<any>;
+export let server: typeof expressServer;
+
+export async function initExpressServer() {
+  // init db
+  await initDb();
+
+  // init server
+  server = expressServer;
+  server.initExpress(db);
+}
 
 export const initDb = async () => {
   db = await init();
@@ -19,7 +30,16 @@ export const deleteTable = async (tableName: Tables) => {
 };
 
 export const cleanDb = async () => {
-  await db.none('DELETE FROM users');
+  if (db) {
+    // Deletes all tables
+    await db.none(`DO $$ DECLARE
+  r RECORD;
+BEGIN
+  FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = current_schema()) LOOP
+    EXECUTE 'DELETE FROM ' || quote_ident(r.tablename) || ' CASCADE';
+  END LOOP;
+END $$;`);
+  }
   await close();
   db = null;
 };
