@@ -13,11 +13,11 @@ jobs:
       - image: circleci/postgres:10
         environment:
           POSTGRES_USER: postgres
-          POSTGRES_DB: mind_pump_test
+          POSTGRES_DB: name_of_your_db_test
     environment:
       NODE_ENV: test
       POSTGRES_USER: postgres
-      POSTGRES_DB: mind_pump_test
+      POSTGRES_DB: name_of_your_db_test
     steps:
       - run:
           name: Install ltree extension for Postgres

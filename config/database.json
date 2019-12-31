@@ -3,14 +3,14 @@
     "driver": "pg",
     "host": "localhost",
     "port": 5432,
-    "database": "mind_pump_test",
+    "database": "name_of_your_db_test",
     "user": "postgres"
   },
   "dev": {
     "driver": "pg",
     "host": "localhost",
     "port": 5432,
-    "database": "mind_pump",
+    "database": "name_of_your_db",
     "user": "postgres"
   },
   "production": {

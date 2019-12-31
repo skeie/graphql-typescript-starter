@@ -6,6 +6,11 @@
    # Install dependencies
    $ yarn
    $ createdb name_of_your_db && createdb name_of_your_db_test
+   ```
+
+   Then search and replace name_of_your_db and name_of_your_db_test with your db name
+
+   ```sh
    $ yarn run migrate:up
    $ yarn run migrate:up:test
    ```

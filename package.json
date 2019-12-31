@@ -10,7 +10,7 @@
     "url": "https://github.com/skeie/graphql-typescript-starter"
   },
   "scripts": {
-    "test": "jest --forceExit --coverage --verbose --detectOpenHandles --maxWorkers=1",
+    "test": "jest --forceExit --verbose --detectOpenHandles --maxWorkers=1",
     "start": "nodemon",
     "build-ts": "tsc -p .",
     "dev": "nodemon",
