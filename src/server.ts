@@ -1,16 +1,17 @@
 import { ApolloServer } from 'apollo-server-express';
 import bodyParser from 'body-parser';
-import express from 'express';
+import express, { Response } from 'express';
 import http from 'http';
 import morganLogger from 'morgan';
 import schema from './schema';
 import { init, close } from './config/dbConnection';
 import { createApollo } from './config/apolloFactory';
 import logger from './config/logger';
+import { DatabaseType } from '../test/support/dbHelpers';
 
 // Creates and configures an ExpressJS web server.
 class Server {
-  private app: express.Application;
+  public app: express.Application;
   private server: http.Server;
   private apollo: ApolloServer;
 
@@ -19,8 +20,9 @@ class Server {
       const db = await this.createDb();
       this.app = express();
       this.apollo = createApollo(schema, { db });
-      this.middleware();
-      this.routes();
+      this.expressMiddleware();
+      this.graphQLMiddleware();
+      this.routes(db);
     } catch (error) {
       logger.error(error);
       throw error;
@@ -31,13 +33,23 @@ class Server {
     return init();
   }
 
-  public middleware() {
+  public initExpress = (db: DatabaseType) => {
+    if (!this.app) {
+      this.app = express();
+      this.expressMiddleware();
+      this.routes(db);
+    }
+  };
+
+  public expressMiddleware() {
     if (process.env.NODE_ENV !== 'production') {
       this.app.use(morganLogger('dev'));
     }
     this.app.use(bodyParser.json());
     this.app.use(bodyParser.urlencoded({ extended: true }));
+  }
 
+  public graphQLMiddleware() {
     this.apollo.applyMiddleware({
       app: this.app,
     });
@@ -64,7 +76,7 @@ class Server {
     }
   }
 
-  private routes() {
+  private routes(db: DatabaseType) {
     /* This is just to get up and running, and to make sure what we've got is
      * working so far. This function will change when we start to add more
      * API endpoints */
