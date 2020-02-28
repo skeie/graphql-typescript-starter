@@ -61,7 +61,7 @@
     "@types/jsonwebtoken": "8.3.7",
     "@types/lodash": "4.14.149",
     "@types/morgan": "1.7.37",
-    "@types/node": "12.12.27",
+    "@types/node": "12.12.29",
     "apollo-server-core": "2.9.15",
     "apollo-server-testing": "2.9.15",
     "db-migrate-pg": "1.0.0",
