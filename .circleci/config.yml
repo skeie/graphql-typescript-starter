@@ -4,28 +4,23 @@ workflows:
   version: 2
   build:
     jobs:
-      - test
+      - build
 
 jobs:
-  test:
+  build:
+    working_directory: ~/repo
     docker:
       - image: circleci/node:10
-      - image: circleci/postgres:10
         environment:
+          PGHOST: 127.0.0.1
+          PGUSER: postgres
+          NODE_ENV: test
+      - image: circleci/postgres:9.6.2-alpine
+        environment:
+          NODE_ENV: test
           POSTGRES_USER: postgres
           POSTGRES_DB: name_of_your_db_test
-    environment:
-      NODE_ENV: test
-      POSTGRES_USER: postgres
-      POSTGRES_DB: name_of_your_db_test
     steps:
-      - run:
-          name: Install ltree extension for Postgres
-          command: |
-            sudo apt-get update
-            sudo apt-get install postgresql-client
-            dockerize -wait tcp://localhost:5432 -timeout 1000m
-            psql -U postgres -h localhost -p 5432 -c 'create extension ltree'
       - checkout
       - restore_cache:
           key: v1-deps-{{ checksum "package.json" }}
