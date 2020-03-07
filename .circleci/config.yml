@@ -24,7 +24,7 @@ jobs:
           command: |
             sudo apt-get update
             sudo apt-get install postgresql-client
-            dockerize -wait tcp://localhost:5432 -timeout 1m
+            dockerize -wait tcp://localhost:5432 -timeout 1000m
             psql -U postgres -h localhost -p 5432 -c 'create extension ltree'
       - checkout
       - restore_cache:
