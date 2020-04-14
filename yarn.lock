@@ -2148,10 +2148,10 @@ db-migrate-base@^2.0.0:
   dependencies:
     bluebird "^3.1.1"
 
-db-migrate-pg@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/db-migrate-pg/-/db-migrate-pg-1.0.0.tgz#a644ed700b0905465e05b497dd321785e7ace183"
-  integrity sha512-mdkT1KY8uE+uEWNEznXvhYGu8xQUGLgI+LiXk+2OyDvqoSl87RWKSLF8UaJTgqtl62f6BatMUymGNTzMSSRpuA==
+db-migrate-pg@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/db-migrate-pg/-/db-migrate-pg-1.1.0.tgz#8cded8efde72332c9f3068f3f54881b03f827fd8"
+  integrity sha512-ZUUoQDAytQOzw725nunpo4UbWP8E2eVE4N8ojG2wTUWy3OjwrsD9Af+xJLjND50g7+H9EUDMwyPvMXEl5saSaQ==
   dependencies:
     bluebird "^3.1.1"
     db-migrate-base "^2.0.0"
