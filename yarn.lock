@@ -2163,10 +2163,10 @@ db-migrate-shared@^1.2.0:
   resolved "https://registry.yarnpkg.com/db-migrate-shared/-/db-migrate-shared-1.2.0.tgz#6125be1b3a5e661229fc75d50c85f6c3ffadbede"
   integrity sha512-65k86bVeHaMxb2L0Gw3y5V+CgZSRwhVQMwDMydmw5MvIpHHwD6SmBciqIwHsZfzJ9yzV/yYhdRefRM6FV5/siw==
 
-db-migrate@0.11.6:
-  version "0.11.6"
-  resolved "https://registry.yarnpkg.com/db-migrate/-/db-migrate-0.11.6.tgz#06fce6bc7f93c4e06ae7b00de33378ac8fc991ee"
-  integrity sha512-HdX4V/RFVSFE+9XjiVZ3K6ofTXtd8KAam+IE14ln+1RWLGUJ1Qo8HFjEs6H3u01yRnCzvHGU0/oNkllf+ZtjVA==
+db-migrate@0.11.7:
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/db-migrate/-/db-migrate-0.11.7.tgz#49a46052d9b3278c0329a6d04c973ad635a6b875"
+  integrity sha512-AbhEWiWqBb4MgHF6J9K8DzvsH/JCAQACjWV6qODrd8jstFSht6dDbT5OYwaJSbRzFFT4OPt4sWDOwWMbgOSkkQ==
   dependencies:
     balanced-match "^1.0.0"
     bluebird "^3.1.1"
@@ -2176,14 +2176,13 @@ db-migrate@0.11.6:
     final-fs "^1.6.0"
     inflection "^1.10.0"
     mkdirp "~0.5.0"
-    optimist "~0.6.1"
     parse-database-url "~0.3.0"
-    pkginfo "^0.4.0"
     prompt "^1.0.0"
     rc "^1.2.8"
     resolve "^1.1.6"
     semver "^5.3.0"
     tunnel-ssh "^4.0.0"
+    yargs "^15.3.1"
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
@@ -5477,7 +5476,7 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-optimist@^0.6.1, optimist@~0.6.1:
+optimist@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/optimist/-/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
   integrity sha1-2j6nRob6IaGaERwybpDrFaAZZoY=
@@ -5849,7 +5848,7 @@ pkginfo@0.3.x:
   resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.3.1.tgz#5b29f6a81f70717142e09e765bbeab97b4f81e21"
   integrity sha1-Wyn2qB9wcXFC4J52W76rl7T4HiE=
 
-pkginfo@0.x.x, pkginfo@^0.4.0:
+pkginfo@0.x.x:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.4.1.tgz#b5418ef0439de5425fc4995042dced14fb2a84ff"
   integrity sha1-tUGO8EOd5UJfxJlQQtztFPsqhP8=
