@@ -64,7 +64,7 @@
     "@types/node": "12.12.39",
     "apollo-server-core": "2.13.1",
     "apollo-server-testing": "2.13.1",
-    "db-migrate-pg": "1.2.1",
+    "db-migrate-pg": "1.2.2",
     "graphql-code-generator": "0.18.2",
     "graphql-codegen-introspection": "0.18.2",
     "graphql-codegen-typescript-common": "0.18.2",
