@@ -52,7 +52,7 @@
     "winston": "3.2.1"
   },
   "devDependencies": {
-    "@rmp135/sql-ts": "1.4.2",
+    "@rmp135/sql-ts": "1.5.0",
     "@types/express-serve-static-core": "4.17.5",
     "@types/bcrypt": "3.0.0",
     "@types/body-parser": "1.19.0",
