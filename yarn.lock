@@ -5829,10 +5829,10 @@ pg-minify@1.6.1:
   resolved "https://registry.yarnpkg.com/pg-minify/-/pg-minify-1.6.1.tgz#d2c735cdaab171f9ab82bb73aded99ace2d88b8c"
   integrity sha512-ujanxJJB9CSDUvlAOshtjdKAywOPR2vY0a7D+vvgk5rbrYcthZA7TjpN+Z+UwZsz/G/bUexYDT6huE33vYVN0g==
 
-pg-monitor@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/pg-monitor/-/pg-monitor-1.4.0.tgz#9fc2769b9dca70fd9295ff794c63dc52ed27909a"
-  integrity sha512-UGUkT3RSWndnT1LHljbyN4UGZida9jukj3SQd0PB8beRcXeePMVN7STj9qPMmde4znBzYaXUK4I5QWQ6n+bTDw==
+pg-monitor@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/pg-monitor/-/pg-monitor-1.4.1.tgz#3eb8aaa58aa4187d7b6ee1b9e0c00b8a22bc1d72"
+  integrity sha512-HLLPPC/2yn7+fOpvatAAMFQMzk/8JwaVS7ATp70Uy+7aTiTvlzIqsTixc6E14L/EGk8fvhu/FJ7qiFbxygbwIA==
   dependencies:
     cli-color "2.0.0"
 
