@@ -59,7 +59,7 @@
     "@types/graphql": "14.2.3",
     "@types/jest": "26.0.15",
     "@types/jsonwebtoken": "8.5.0",
-    "@types/lodash": "4.14.163",
+    "@types/lodash": "4.14.164",
     "@types/morgan": "1.9.2",
     "@types/node": "12.19.3",
     "apollo-server-core": "2.16.0",
