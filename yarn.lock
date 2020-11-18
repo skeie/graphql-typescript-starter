@@ -917,10 +917,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.0.tgz#5b6ee7a77faacddd7de719017d0bc12f52f81589"
   integrity sha512-0ARSQootUG1RljH2HncpsY2TJBfGQIKOOi7kxzUY6z54ePu/ZD+wJA8zI2Q6v8rol2qpG/rvqsReco8zNMPvhQ==
 
-"@types/node@12.19.4":
-  version "12.19.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.19.4.tgz#cdfbb62e26c7435ed9aab9c941393cc3598e9b46"
-  integrity sha512-o3oj1bETk8kBwzz1WlO6JWL/AfAA3Vm6J1B3C9CsdxHYp7XgPiH7OEXPUbZTndHlRaIElrANkQfe6ZmfJb3H2w==
+"@types/node@12.19.5":
+  version "12.19.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.19.5.tgz#9be3946136e818597c71c62d04240d0602c645d4"
+  integrity sha512-Wgdl27uw/jUYUFyajUGKSjDNGxmJrZi9sjeG6UJImgUtKbJoO9aldx+1XODN1EpNDX9DirvbvHHmTsNlb8GwMA==
 
 "@types/node@^10.1.0":
   version "10.17.17"
