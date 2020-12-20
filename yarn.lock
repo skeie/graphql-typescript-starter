@@ -1417,10 +1417,10 @@ asn1@~0.2.0, asn1@~0.2.3:
   dependencies:
     safer-buffer "~2.1.0"
 
-assert-options@0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/assert-options/-/assert-options-0.6.2.tgz#cf0b27097b61aa1987d63628cbbaea11353f999a"
-  integrity sha512-KP9S549XptFAPGYmLRnIjQBL4/Ry8Jx5YNLQZ/l+eejqbTidBMnw4uZSAsUrzBq/lgyqDYqxcTF7cOxZb9gyEw==
+assert-options@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/assert-options/-/assert-options-0.7.0.tgz#82c27618d9c0baa5e9da8ef607ee261a44ed6e5e"
+  integrity sha512-7q9uNH/Dh8gFgpIIb9ja8PJEWA5AQy3xnBC8jtKs8K/gNVCr1K6kIvlm59HUyYgvM7oEDoLzGgPcGd9FqhtXEQ==
 
 assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
@@ -5996,10 +5996,10 @@ pg-int8@1.0.1:
   resolved "https://registry.yarnpkg.com/pg-int8/-/pg-int8-1.0.1.tgz#943bd463bf5b71b4170115f80f8efc9a0c0eb78c"
   integrity sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==
 
-pg-minify@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/pg-minify/-/pg-minify-1.6.1.tgz#d2c735cdaab171f9ab82bb73aded99ace2d88b8c"
-  integrity sha512-ujanxJJB9CSDUvlAOshtjdKAywOPR2vY0a7D+vvgk5rbrYcthZA7TjpN+Z+UwZsz/G/bUexYDT6huE33vYVN0g==
+pg-minify@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/pg-minify/-/pg-minify-1.6.2.tgz#055acfe862cfca3ca0a529020846b0f308d68e70"
+  integrity sha512-1KdmFGGTP6jplJoI8MfvRlfvMiyBivMRP7/ffh4a11RUFJ7kC2J0ZHlipoKiH/1hz+DVgceon9U2qbaHpPeyPg==
 
 pg-monitor@1.4.1:
   version "1.4.1"
@@ -6018,14 +6018,14 @@ pg-pool@^3.2.2:
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-3.2.2.tgz#a560e433443ed4ad946b84d774b3f22452694dff"
   integrity sha512-ORJoFxAlmmros8igi608iVEbQNNZlp89diFVx6yV5v+ehmpMY9sK6QgpmgoXbmkNaBAx8cOOZh9g80kJv1ooyA==
 
-pg-promise@10.8.3:
-  version "10.8.3"
-  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-10.8.3.tgz#96e60dcd56b90a716f2047ab4234d442c3c7a90b"
-  integrity sha512-JqEd0R85cj83bI7C+dvkjdvfkL4eJUshOa73a8f6eq5ZVZMB0jpeR4tfeCyYUAvAkPBILnsi4b1VhLUO/dRw+Q==
+pg-promise@10.8.4:
+  version "10.8.4"
+  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-10.8.4.tgz#628983a531c1f94e395f90ae5521835b71e895e7"
+  integrity sha512-1jSrrZPJIzdmLztVvfiJkbm59eZVZMc9f9t1s5DByWEZobidqjq3987Nt994LS8al7Ua2VI7C2EMgKhvfmaF2A==
   dependencies:
-    assert-options "0.6.2"
+    assert-options "0.7.0"
     pg "8.5.1"
-    pg-minify "1.6.1"
+    pg-minify "1.6.2"
     spex "3.1.0"
 
 pg-protocol@^1.2.2:
