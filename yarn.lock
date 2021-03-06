@@ -577,10 +577,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@rmp135/sql-ts@1.8.1":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@rmp135/sql-ts/-/sql-ts-1.8.1.tgz#fbd53ade246c135f52aff002db36ecfba7b4f9ba"
-  integrity sha512-i/jyGvXUdoOhdKYx+xusjRs6RdxlToQgnFEaJcljPOuR+svJ2a6oyQkUineLKFhnmsITI7wc3dn2vB5XX28eQA==
+"@rmp135/sql-ts@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@rmp135/sql-ts/-/sql-ts-1.8.2.tgz#479a9d230af4eba85e285edb350160baae795dd7"
+  integrity sha512-/PawHwUkYhT1Y39/mLrMr0eX46yskh0KLagMOP8uXN838becrFkDllIKwiauAzfnZNQdTirQPzKGt0xipMRT1g==
   dependencies:
     handlebars "^4.7.6"
     knex "^0.21.17"
