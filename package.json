@@ -39,7 +39,7 @@
     "camelcase": "6.2.0",
     "core-js": "3.11.2",
     "db-migrate": "0.11.12",
-    "dotenv": "8.2.0",
+    "dotenv": "8.4.0",
     "express": "4.17.1",
     "graphql": "15.5.0",
     "jsonwebtoken": "8.5.1",
