@@ -60,7 +60,7 @@
     "@types/jest": "26.0.24",
     "@types/jsonwebtoken": "8.5.4",
     "@types/lodash": "4.14.171",
-    "@types/morgan": "1.9.2",
+    "@types/morgan": "1.9.3",
     "@types/node": "14.17.4",
     "apollo-server-core": "2.16.0",
     "apollo-server-testing": "2.16.0",
