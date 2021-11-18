@@ -57,7 +57,7 @@
     "@types/bcrypt": "5.0.0",
     "@types/body-parser": "1.19.2",
     "@types/graphql": "14.2.3",
-    "@types/jest": "27.0.2",
+    "@types/jest": "27.0.3",
     "@types/jsonwebtoken": "8.5.6",
     "@types/lodash": "4.14.177",
     "@types/morgan": "1.9.3",
