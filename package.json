@@ -72,7 +72,7 @@
     "graphql-codegen-typescript-server": "0.18.2",
     "jest": "27.4.3",
     "node-fetch": "2.6.7",
-    "nodemon": "2.0.20",
+    "nodemon": "2.0.22",
     "prettier": "2.5.1",
     "ts-jest": "27.1.4",
     "tslint": "6.1.3",
