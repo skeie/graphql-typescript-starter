@@ -37,7 +37,7 @@
     "bcrypt": "5.1.1",
     "body-parser": "1.20.6",
     "camelcase": "6.3.0",
-    "core-js": "3.19.3",
+    "core-js": "3.50.0",
     "db-migrate": "0.11.14",
     "dotenv": "8.6.0",
     "express": "4.20.0",
