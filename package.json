@@ -40,7 +40,7 @@
     "core-js": "3.50.0",
     "db-migrate": "0.11.14",
     "dotenv": "8.6.0",
-    "express": "4.20.0",
+    "express": "4.22.2",
     "graphql": "15.8.0",
     "jsonwebtoken": "8.5.1",
     "lodash": "4.18.1",
